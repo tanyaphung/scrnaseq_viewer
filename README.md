@@ -1,4 +1,4 @@
-![image](https://github.com/tanyaphung/scrnaseq_viewer/assets/10180091/a66fbb1f-2eee-439e-a1c0-e021e855179b)# scrnaseq_viewer
+# scrnaseq_viewer
 This repository provides an overview of single cell RNAseq data that I have processed
 
 # Tissue: Brain
