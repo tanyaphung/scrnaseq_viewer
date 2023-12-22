@@ -41,3 +41,17 @@ This repository provides an overview of single cell RNAseq data that I have proc
   - Developmental stage: there are 40 unique values but from Figure 1 of the paper, they could be grouped in 8 groups: 2nd trimester, 3rd trimester, 0-1 years, 1-2 years, 2-4 years, 4-10 years, 10-20 years, and Adult. 
 - Cell type labels:
   - 6: native cell, astrocyte, oligodendrocyte, microglial cell, neural cell, oligodendrocyte precursor cell
+
+2. Sepp et al. 2023
+- Title: Cellular development and evolution of the mammalian cerebellum
+- Link: https://www.nature.com/articles/s41586-023-06884-x#Abs1
+- Short summary: Sepp et al. 2023 sequenced the cerebellum in mouse, human, and opossum at different developmental stages. There were ~400k cells in total but only ~160k normal human cells
+- Specific region: cerebellum
+- Total number of human normal cells: 163,283
+- Information from the observation dataframe:
+  - Assay: there seems to be 2 versions of 10x: 10x 3' v2, 10x 3' v3. For now I won't separate them but keep in mind there might be some differences. See Extended Data Fig. 1.
+  - Data included diseases and normal so I only keep the cells coming from normal (healthy) samples
+  - Both male and female
+  - Developmental stage: from the column author_stage, there are 18 unique values but I am going to group them into 11 groups: CS18, CS19, CS22, 9 wpc, 11 wpc, 17 wpc, 20 wpc, newborn, infant, toddler, and adult
+  - Cell type lables:
+    - 25: native cell, cerebellar granule cell, glutamatergic neuron, macroglial cell, Purkinje cell neuroblast, GABAergic neuron, cerebellar granule cell precursor, interneuron, unipolar brush cell, microglial cell, progenitor cell, gllioblast, noradrenergic cell, central nervous system macrophage, brain vascular cell, erythroid lineage cell, leukocyte, oligodendrocyte precursor cell, T cell, meningeal macrophage, Bergmann glial cell, immature astrocyte, oligodendrocyte
