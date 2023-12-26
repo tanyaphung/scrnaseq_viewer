@@ -55,3 +55,17 @@ This repository provides an overview of single cell RNAseq data that I have proc
   - Developmental stage: from the column author_stage, there are 18 unique values but I am going to group them into 11 groups: CS18, CS19, CS22, 9 wpc, 11 wpc, 17 wpc, 20 wpc, newborn, infant, toddler, and adult
   - Cell type lables:
     - 25: native cell, cerebellar granule cell, glutamatergic neuron, macroglial cell, Purkinje cell neuroblast, GABAergic neuron, cerebellar granule cell precursor, interneuron, unipolar brush cell, microglial cell, progenitor cell, gllioblast, noradrenergic cell, central nervous system macrophage, brain vascular cell, erythroid lineage cell, leukocyte, oligodendrocyte precursor cell, T cell, meningeal macrophage, Bergmann glial cell, immature astrocyte, oligodendrocyte
+
+3. Zhu et al. 2023
+- Title: Multi-omic profiling of the developing human cerebral cortex at the single-cell level
+- Link: https://www.science.org/doi/10.1126/sciadv.adg3754
+- Short summary: Zhu et al. 2023 sequenced the neocortex using both snRNAseq and scATACseq techonologies (simutaneous multi-omics single-cell profiling in the developing brain)
+- Specific region: neocortex
+- Total number of human normal cells: 45,549
+- Information from the observation dataframe:
+  - Assay: 10x multiome
+  - Only normal
+  - Developmental stage (6 stages): 18-19 GW, 23-24 GW, 0 year, 4-6 years, 14 years, 20-39 years
+  - Cell type lables:
+    - 13 cell types from the column `cell_type`
+    - 15 cell types from the column `author_cell_type`: EN-fetal-late, IN-fetal, VSMC, Endothelial, RG, OPC, IN-CGE, Microglia, IN-MGE, Pericytes, EN-fetal-early, Astrocytes, EN, IPC, Oligodendrocytes
