@@ -69,3 +69,21 @@ This repository provides an overview of single cell RNAseq data that I have proc
   - Cell type lables:
     - 13 cell types from the column `cell_type`
     - 15 cell types from the column `author_cell_type`: EN-fetal-late, IN-fetal, VSMC, Endothelial, RG, OPC, IN-CGE, Microglia, IN-MGE, Pericytes, EN-fetal-early, Astrocytes, EN, IPC, Oligodendrocytes
+
+4. Smith et al. 2021
+- Title: Early role for a Na+,K+-ATPase (ATP1A3) in brain development
+- Link: https://pubmed.ncbi.nlm.nih.gov/34161264/
+- Short summary:
+- Specific region: neocortex
+- Midgestational:
+  - Total number of human normal cells: 118,647
+  - Assay: Dropseq
+  - Only normal
+  - Tissues: 'parietal lobe', 'hippocampal formation', 'primary visual cortex', 'medial ganglionic eminence', 'caudal ganglionic eminence', 'orbitofrontal cortex', 'anterior cingulate cortex'
+  - Cell type lables: 'glial cell', 'GABAergic neuron', 'glutamatergic neuron', 'neural progenitor cell'
+- Infant:
+  - Total number of human normal cells: 51,878
+  - Assay: Dropseq
+  - Only normal
+  - Tissues: 'prefrontal cortex', 'temporal lobe', 'parietal lobe', 'primary visual cortex'
+  - Cell type lables: 'glial cell', 'GABAergic neuron', 'glutamatergic neuron'
