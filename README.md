@@ -3,7 +3,7 @@ This repository provides an overview of single cell RNAseq data that I have proc
 
 # Tissue: Brain
 ## Developmental stage: adult
-1. Jorstad et al. 2023
+#### 1. Jorstad et al. 2023
 - Title: Comparative transcriptomics reveals human-specific cortical features
 - Link: https://www.science.org/doi/10.1126/science.ade9516
 - Short summary: Jorstad et al. 2023 sequenced the MTG region of the adult brain which resulted in about 150,000 cells total
@@ -27,7 +27,7 @@ This repository provides an overview of single cell RNAseq data that I have proc
   - Non-neuronal cells: astrocytes, OPCs, oligodendrocytes, microglia/PVMs, endothelia cells, and VLMCs
 
 ## Developmental stage: multiple stages (prenatal, postnatal, and adult)
-1. Velmeshev et al. 2023
+#### 1. Velmeshev et al. 2023
 - Title: Single-cell analysis of prenatal and postnatal human cortical development
 - Link: https://www.science.org/doi/10.1126/science.adf0834
 - Short summary:
@@ -42,7 +42,7 @@ This repository provides an overview of single cell RNAseq data that I have proc
 - Cell type labels:
   - 6: native cell, astrocyte, oligodendrocyte, microglial cell, neural cell, oligodendrocyte precursor cell
 
-2. Sepp et al. 2023
+#### 2. Sepp et al. 2023
 - Title: Cellular development and evolution of the mammalian cerebellum
 - Link: https://www.nature.com/articles/s41586-023-06884-x#Abs1
 - Short summary: Sepp et al. 2023 sequenced the cerebellum in mouse, human, and opossum at different developmental stages. There were ~400k cells in total but only ~160k normal human cells
@@ -56,7 +56,7 @@ This repository provides an overview of single cell RNAseq data that I have proc
   - Cell type lables:
     - 25: native cell, cerebellar granule cell, glutamatergic neuron, macroglial cell, Purkinje cell neuroblast, GABAergic neuron, cerebellar granule cell precursor, interneuron, unipolar brush cell, microglial cell, progenitor cell, gllioblast, noradrenergic cell, central nervous system macrophage, brain vascular cell, erythroid lineage cell, leukocyte, oligodendrocyte precursor cell, T cell, meningeal macrophage, Bergmann glial cell, immature astrocyte, oligodendrocyte
 
-3. Zhu et al. 2023
+#### 3. Zhu et al. 2023
 - Title: Multi-omic profiling of the developing human cerebral cortex at the single-cell level
 - Link: https://www.science.org/doi/10.1126/sciadv.adg3754
 - Short summary: Zhu et al. 2023 sequenced the neocortex using both snRNAseq and scATACseq techonologies (simutaneous multi-omics single-cell profiling in the developing brain)
@@ -70,10 +70,10 @@ This repository provides an overview of single cell RNAseq data that I have proc
     - 13 cell types from the column `cell_type`
     - 15 cell types from the column `author_cell_type`: EN-fetal-late, IN-fetal, VSMC, Endothelial, RG, OPC, IN-CGE, Microglia, IN-MGE, Pericytes, EN-fetal-early, Astrocytes, EN, IPC, Oligodendrocytes
 
-4. Smith et al. 2021
+#### 4. Smith et al. 2021
 - Title: Early role for a Na+,K+-ATPase (ATP1A3) in brain development
 - Link: https://pubmed.ncbi.nlm.nih.gov/34161264/
-- Short summary:
+- Short summary: In this study Smith et al. 2021 is mostly interested in the gene ATP1A3 because variants in this gene could be linked to polymicrogyria, a developmental malformation of the cerebral cortex characterized by abnormal folding and laminar organization. 
 - Specific region: neocortex
 - Midgestational:
   - Total number of human normal cells: 118,647
