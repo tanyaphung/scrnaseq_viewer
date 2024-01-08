@@ -26,6 +26,36 @@ This repository provides an overview of single cell RNAseq data that I have proc
     - 4 deep-layer non-IT-projecting subclasses (L5 ET, L5/6 NP, L6b, and L6 CT)
   - Non-neuronal cells: astrocytes, OPCs, oligodendrocytes, microglia/PVMs, endothelia cells, and VLMCs
 
+## Developmental stage: prenatal and early postnatal
+#### 1. Smith et al. 2021 
+**TL;DR:** neocortex; midgestational and infant
+- Title: Early role for a Na+,K+-ATPase (ATP1A3) in brain development
+- Link: https://pubmed.ncbi.nlm.nih.gov/34161264/
+- Short summary: In this study Smith et al. 2021 is mostly interested in the gene ATP1A3 because variants in this gene could be linked to polymicrogyria, a developmental malformation of the cerebral cortex characterized by abnormal folding and laminar organization. 
+- Specific region: neocortex
+- Midgestational:
+  - Total number of human normal cells: 118,647
+  - Assay: Dropseq
+  - Only normal
+  - Tissues: 'parietal lobe', 'hippocampal formation', 'primary visual cortex', 'medial ganglionic eminence', 'caudal ganglionic eminence', 'orbitofrontal cortex', 'anterior cingulate cortex'
+  - Cell type lables: 'glial cell', 'GABAergic neuron', 'glutamatergic neuron', 'neural progenitor cell'
+- Infant:
+  - Total number of human normal cells: 51,878
+  - Assay: Dropseq
+  - Only normal
+  - Tissues: 'prefrontal cortex', 'temporal lobe', 'parietal lobe', 'primary visual cortex'
+  - Cell type lables: 'glial cell', 'GABAergic neuron', 'glutamatergic neuron'
+ 
+  #### 2. Aldinger et al. 2021
+  **TL;DR:** cerebellum; 9-21 wpc
+  - Title: Spatial and cell type transcriptional landscape of human cerebellar development
+  - Link: https://pubmed.ncbi.nlm.nih.gov/34140698/
+  - Short summary: Since the cerebellum is not well represented in previous bulk and single-cell transcriptomic studies of the developing human brain, the developmental origins of the cerebellar neuroanatomy is not well understood. Therefore, the goal of this study is to perform both bulk RNAseq and scRNAseq across 9 developmental stages prenatally ranging from 9 weeks to 21 weeks post fertilization
+  - Total number of human normal cells: 69174
+  - Assay: SPLiT-seq
+  - Tissue: cerebella
+
+
 ## Developmental stage: multiple stages (prenatal, postnatal, and adult)
 #### 1. Velmeshev et al. 2023
 - Title: Single-cell analysis of prenatal and postnatal human cortical development
@@ -70,20 +100,4 @@ This repository provides an overview of single cell RNAseq data that I have proc
     - 13 cell types from the column `cell_type`
     - 15 cell types from the column `author_cell_type`: EN-fetal-late, IN-fetal, VSMC, Endothelial, RG, OPC, IN-CGE, Microglia, IN-MGE, Pericytes, EN-fetal-early, Astrocytes, EN, IPC, Oligodendrocytes
 
-#### 4. Smith et al. 2021
-- Title: Early role for a Na+,K+-ATPase (ATP1A3) in brain development
-- Link: https://pubmed.ncbi.nlm.nih.gov/34161264/
-- Short summary: In this study Smith et al. 2021 is mostly interested in the gene ATP1A3 because variants in this gene could be linked to polymicrogyria, a developmental malformation of the cerebral cortex characterized by abnormal folding and laminar organization. 
-- Specific region: neocortex
-- Midgestational:
-  - Total number of human normal cells: 118,647
-  - Assay: Dropseq
-  - Only normal
-  - Tissues: 'parietal lobe', 'hippocampal formation', 'primary visual cortex', 'medial ganglionic eminence', 'caudal ganglionic eminence', 'orbitofrontal cortex', 'anterior cingulate cortex'
-  - Cell type lables: 'glial cell', 'GABAergic neuron', 'glutamatergic neuron', 'neural progenitor cell'
-- Infant:
-  - Total number of human normal cells: 51,878
-  - Assay: Dropseq
-  - Only normal
-  - Tissues: 'prefrontal cortex', 'temporal lobe', 'parietal lobe', 'primary visual cortex'
-  - Cell type lables: 'glial cell', 'GABAergic neuron', 'glutamatergic neuron'
+
