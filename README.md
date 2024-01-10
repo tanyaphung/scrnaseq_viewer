@@ -25,6 +25,15 @@ This repository provides an overview of single cell RNAseq data that I have proc
     - 5 IT-projecting subclasses (L2/3 IT, L4 IT, L5 IT, L6 IT, and L5/6 IT CAR3)
     - 4 deep-layer non-IT-projecting subclasses (L5 ET, L5/6 NP, L6b, and L6 CT)
   - Non-neuronal cells: astrocytes, OPCs, oligodendrocytes, microglia/PVMs, endothelia cells, and VLMCs
+ 
+#### 2. Bakken et al. 2021
+**TL;DR:** primary motor cortex, adult
+- Title: Comparative cellular analysis of motor cortex in human, marmoset and mouse
+- Link: https://www.nature.com/articles/s41586-021-03465-8#Abs1
+- Short summary: Bakken et al. 2021 sequenced the primary motor cortex region of the adult brain from different species (humans, marmoset monkey, and mice)
+- Specific region: primary motor cortex M1
+- Total number of cells: ~20k for humans only
+- Assay: 10x 3' v3
 
 ## Developmental stage: prenatal and early postnatal
 #### 1. Smith et al. 2021 
