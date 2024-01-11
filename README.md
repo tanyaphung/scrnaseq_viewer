@@ -81,7 +81,7 @@ This repository provides an overview of single cell RNAseq data that I have proc
 - Tissue: neocortex
  
 ## Developmental stage: child
-### 1. Torres-Flores
+#### 1. Torres-Flores
 **TL;DR:** cerebellum; child_age
 - Short summary: 
 - Total number of human normal cells: 
