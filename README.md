@@ -1,10 +1,9 @@
 # scrnaseq_viewer
 This repository provides an overview of single cell RNAseq data that I have processed
 
-[toc]
 # Tissue: Brain
 ## Developmental stage: adult
-#### 1. Jorstad et al. 2023
+#### 1. Jorstad et al. 2023 MTG
 - Title: Comparative transcriptomics reveals human-specific cortical features
 - Link: https://www.science.org/doi/10.1126/science.ade9516
 - Short summary: Jorstad et al. 2023 sequenced the MTG region of the adult brain which resulted in about 150,000 cells total
@@ -26,8 +25,15 @@ This repository provides an overview of single cell RNAseq data that I have proc
     - 5 IT-projecting subclasses (L2/3 IT, L4 IT, L5 IT, L6 IT, and L5/6 IT CAR3)
     - 4 deep-layer non-IT-projecting subclasses (L5 ET, L5/6 NP, L6b, and L6 CT)
   - Non-neuronal cells: astrocytes, OPCs, oligodendrocytes, microglia/PVMs, endothelia cells, and VLMCs
+
+#### 2. Jorstad et al. 2023 Neocortex
+- Title: Transcriptomic cytoarchitecture reveals principles of human neocortex organization
+- Link: [https://www.science.org/doi/10.1126/science.ade9516](https://pubmed.ncbi.nlm.nih.gov/37824655/)
+- Short summary: To better understand cortical areal specilization, Jorstad et al. 2023 sequenced the neocortex of the adult brain.
+- 8 areas spanning cortical structural variation: primary motor cortex (M1), primary somatosensory cortex (S1), primary auditory cortex (A1), primary visual cortex (V1), dorsolateral prefrontal cortex (DFC), anterior cingulate cortex (ACC), middle temporal gyrus (MTG), and angular gyrus (AnG)
+- Total number of cells: ~1.15 million from 10x and ~49k from Smart-seq
  
-#### 2. Bakken et al. 2021
+#### 3. Bakken et al. 2021
 **TL;DR:** primary motor cortex, adult
 - Title: Comparative cellular analysis of motor cortex in human, marmoset and mouse
 - Link: https://www.nature.com/articles/s41586-021-03465-8#Abs1
@@ -56,15 +62,31 @@ This repository provides an overview of single cell RNAseq data that I have proc
   - Tissues: 'prefrontal cortex', 'temporal lobe', 'parietal lobe', 'primary visual cortex'
   - Cell type lables: 'glial cell', 'GABAergic neuron', 'glutamatergic neuron'
  
-  #### 2. Aldinger et al. 2021
-  **TL;DR:** cerebellum; 9-21 wpc
-  - Title: Spatial and cell type transcriptional landscape of human cerebellar development
-  - Link: https://pubmed.ncbi.nlm.nih.gov/34140698/
-  - Short summary: Since the cerebellum is not well represented in previous bulk and single-cell transcriptomic studies of the developing human brain, the developmental origins of the cerebellar neuroanatomy is not well understood. Therefore, the goal of this study is to perform both bulk RNAseq and scRNAseq across 9 developmental stages prenatally ranging from 9 weeks to 21 weeks post fertilization
-  - Total number of human normal cells: 69174
-  - Assay: SPLiT-seq
-  - Tissue: cerebella
+#### 2. Aldinger et al. 2021
+**TL;DR:** cerebellum; 9-21 wpc
+- Title: Spatial and cell type transcriptional landscape of human cerebellar development
+- Link: https://pubmed.ncbi.nlm.nih.gov/34140698/
+- Short summary: Since the cerebellum is not well represented in previous bulk and single-cell transcriptomic studies of the developing human brain, the developmental origins of the cerebellar neuroanatomy is not well understood. Therefore, the goal of this study is to perform both bulk RNAseq and scRNAseq across 9 developmental stages prenatally ranging from 9 weeks to 21 weeks post fertilization
+- Total number of human normal cells: 69174
+- Assay: SPLiT-seq
+- Tissue: cerebella
 
+#### 3. Bhaduri et al. 2021
+**TL;DR:** 6 neocortical areas; 2nd trimester
+- Title: An atlas of cortical arealization identifies dynamic molecular signatures
+- Link: [https://pubmed.ncbi.nlm.nih.gov/34140698/](https://pubmed.ncbi.nlm.nih.gov/34616070/)
+- Short summary: How early patterns result in finer and more discrete spatial differences remains poorly understood. To contribute to better understand this, the authors sequenced 10 major brain structures including 6 neocortical areas during the second trimester
+- Total number of human normal cells: 698,820 but only 457,965 cells are available from the download
+- Assay: 10x 3' v2
+- Tissue: neocortex
+ 
+## Developmental stage: child
+### 1. Torres-Flores
+**TL;DR:** cerebellum; child_age
+- Short summary: 
+- Total number of human normal cells: 
+- Assay: 10x 3' v3
+- Tissue: cerebellum
 
 ## Developmental stage: multiple stages (prenatal, postnatal, and adult)
 #### 1. Velmeshev et al. 2023
