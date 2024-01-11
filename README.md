@@ -2,7 +2,7 @@
 This repository provides an overview of single cell RNAseq data that I have processed
 
 ##### Table of Contents  
-[Tissue: Brain](# Tissue: Brain)  
+[Tissue: Brain](#tissue-brain)  
 
 # Tissue: Brain
 ## Developmental stage: adult
