@@ -1,6 +1,7 @@
 # scrnaseq_viewer
 This repository provides an overview of single cell RNAseq data that I have processed
 
+[toc]
 # Tissue: Brain
 ## Developmental stage: adult
 #### 1. Jorstad et al. 2023
