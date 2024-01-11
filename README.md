@@ -3,9 +3,13 @@ This repository provides an overview of single cell RNAseq data that I have proc
 
 ##### Table of Contents  
 [Tissue: Brain](#tissue-brain)  
+
   [Developmental stage: adult](#developmental-stage-adult)
+  
   [Developmental stage: prenatal and early postnatal](#developmental-stage-prenatal-and-early-postnatal)
+  
   [Developmental stage: child](#developmental-stage-child)
+  
   [Developmental stage: multiple stages (prenatal, postnatal, and adult)](#developmental-stage-multiple-stages-prenatal-postnatal-and-adult)
 
 # Tissue: Brain
