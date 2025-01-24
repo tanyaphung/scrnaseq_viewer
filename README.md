@@ -1,5 +1,11 @@
 # scrnaseq_viewer
-This repository provides an overview of single cell RNAseq data that I have processed
+This repository provides an overview of single cell RNAseq data that I have processed as part of Phung et al. (in preparation).
+
+# Setting up conda environment
+- yaml file is provided in `resources/scrna_env.yml`
+```
+conda env create --name scrna --file=resources/scrna_env.yml
+```
 
 ##### Table of Contents  
 [Tissue: Brain](#tissue-brain)  
@@ -12,9 +18,11 @@ This repository provides an overview of single cell RNAseq data that I have proc
   
   [Developmental stage: multiple stages (prenatal, postnatal, and adult)](#developmental-stage-multiple-stages-prenatal-postnatal-and-adult)
 
+
 # Tissue: Brain
 ## Developmental stage: adult
-#### 1. Jorstad et al. 2023 MTG
+(Note: the order of the datasets described here follows the ordering from the manuscript in preparation - more details to follow)
+#### 13. Jorstad et al. 2023 MTG
 - Title: Comparative transcriptomics reveals human-specific cortical features
 - Link: https://www.science.org/doi/10.1126/science.ade9516
 - Short summary: Jorstad et al. 2023 sequenced the MTG region of the adult brain which resulted in about 150,000 cells total
@@ -37,14 +45,14 @@ This repository provides an overview of single cell RNAseq data that I have proc
     - 4 deep-layer non-IT-projecting subclasses (L5 ET, L5/6 NP, L6b, and L6 CT)
   - Non-neuronal cells: astrocytes, OPCs, oligodendrocytes, microglia/PVMs, endothelia cells, and VLMCs
 
-#### 2. Jorstad et al. 2023 Neocortex
+#### 16. Jorstad et al. 2023 Neocortex
 - Title: Transcriptomic cytoarchitecture reveals principles of human neocortex organization
 - Link: [https://www.science.org/doi/10.1126/science.ade9516](https://pubmed.ncbi.nlm.nih.gov/37824655/)
 - Short summary: To better understand cortical areal specilization, Jorstad et al. 2023 sequenced the neocortex of the adult brain.
 - 8 areas spanning cortical structural variation: primary motor cortex (M1), primary somatosensory cortex (S1), primary auditory cortex (A1), primary visual cortex (V1), dorsolateral prefrontal cortex (DFC), anterior cingulate cortex (ACC), middle temporal gyrus (MTG), and angular gyrus (AnG)
 - Total number of cells: ~1.15 million from 10x and ~49k from Smart-seq
  
-#### 3. Bakken et al. 2021
+#### 6. Bakken et al. 2021
 **TL;DR:** primary motor cortex, adult
 - Title: Comparative cellular analysis of motor cortex in human, marmoset and mouse
 - Link: https://www.nature.com/articles/s41586-021-03465-8#Abs1
@@ -52,6 +60,19 @@ This repository provides an overview of single cell RNAseq data that I have proc
 - Specific region: primary motor cortex M1
 - Total number of cells: ~20k for humans only
 - Assay: 10x 3' v3
+
+#### 14. Siletti et al. 2023
+- Title: Transcriptomic diversity of cell types across the adult human brain
+- Link: https://pubmed.ncbi.nlm.nih.gov/37824663/
+- Short summary: 
+  - Isolated postmortem tissue from 3 donors
+  - Enriched for neurons from ~100 locations across the forebrain (cerebral cortex, hippocampus, cerebral nuclei, hypothalamus, and thalamus), midbrain, and hindbrain (pons, medulla, and cerebellum)
+  - ~3M cells  31 superclusters, 461 clusters, and 3313 subclusters
+- Preprocessing scRNA steps
+  - `code/preprocessing/14_Siletti_AdultHumanBrain/qc_scrna_siletti_adulthumanbrain.py`
+    - I used a snakemake pipeline to run this python script in parallel: `code/preprocessing/14_Siletti_AdultHumanBrain/snakefile_qc_scrna_siletti.smk`
+  - update cell type columns (this is because when this data was originally processed, we did not come to the conclusion in our group that we would rename the first level of cell type annotation to cell_type_level_1)
+    - `code/preprocessing/14_Siletti_AdultHumanBrain/update_celltype.py` (run with `code/preprocessing/14_Siletti_AdultHumanBrain/run_update_celltype.sh`)
 
 ## Developmental stage: prenatal and early postnatal
 #### 1. Smith et al. 2021 
@@ -73,7 +94,7 @@ This repository provides an overview of single cell RNAseq data that I have proc
   - Tissues: 'prefrontal cortex', 'temporal lobe', 'parietal lobe', 'primary visual cortex'
   - Cell type lables: 'glial cell', 'GABAergic neuron', 'glutamatergic neuron'
  
-#### 2. Aldinger et al. 2021
+#### 4. Aldinger et al. 2021
 **TL;DR:** cerebellum; 9-21 wpc
 - Title: Spatial and cell type transcriptional landscape of human cerebellar development
 - Link: https://pubmed.ncbi.nlm.nih.gov/34140698/
@@ -82,7 +103,7 @@ This repository provides an overview of single cell RNAseq data that I have proc
 - Assay: SPLiT-seq
 - Tissue: cerebella
 
-#### 3. Bhaduri et al. 2021
+#### 5. Bhaduri et al. 2021
 **TL;DR:** 6 neocortical areas; 2nd trimester
 - Title: An atlas of cortical arealization identifies dynamic molecular signatures
 - Link: [https://pubmed.ncbi.nlm.nih.gov/34140698/](https://pubmed.ncbi.nlm.nih.gov/34616070/)
@@ -92,7 +113,7 @@ This repository provides an overview of single cell RNAseq data that I have proc
 - Tissue: neocortex
  
 ## Developmental stage: child
-#### 1. Torres-Flores
+#### 21. Torres-Flores
 **TL;DR:** cerebellum; child_age
 - Short summary: 
 - Total number of human normal cells: 
@@ -100,7 +121,7 @@ This repository provides an overview of single cell RNAseq data that I have proc
 - Tissue: cerebellum
 
 ## Developmental stage: multiple stages (prenatal, postnatal, and adult)
-#### 1. Velmeshev et al. 2023
+#### 17. Velmeshev et al. 2023
 - Title: Single-cell analysis of prenatal and postnatal human cortical development
 - Link: https://www.science.org/doi/10.1126/science.adf0834
 - Short summary:
@@ -115,7 +136,7 @@ This repository provides an overview of single cell RNAseq data that I have proc
 - Cell type labels:
   - 6: native cell, astrocyte, oligodendrocyte, microglial cell, neural cell, oligodendrocyte precursor cell
 
-#### 2. Sepp et al. 2023
+#### 18. Sepp et al. 2023
 - Title: Cellular development and evolution of the mammalian cerebellum
 - Link: https://www.nature.com/articles/s41586-023-06884-x#Abs1
 - Short summary: Sepp et al. 2023 sequenced the cerebellum in mouse, human, and opossum at different developmental stages. There were ~400k cells in total but only ~160k normal human cells
@@ -129,7 +150,7 @@ This repository provides an overview of single cell RNAseq data that I have proc
   - Cell type lables:
     - 25: native cell, cerebellar granule cell, glutamatergic neuron, macroglial cell, Purkinje cell neuroblast, GABAergic neuron, cerebellar granule cell precursor, interneuron, unipolar brush cell, microglial cell, progenitor cell, gllioblast, noradrenergic cell, central nervous system macrophage, brain vascular cell, erythroid lineage cell, leukocyte, oligodendrocyte precursor cell, T cell, meningeal macrophage, Bergmann glial cell, immature astrocyte, oligodendrocyte
 
-#### 3. Zhu et al. 2023
+#### 15. Zhu et al. 2023
 - Title: Multi-omic profiling of the developing human cerebral cortex at the single-cell level
 - Link: https://www.science.org/doi/10.1126/sciadv.adg3754
 - Short summary: Zhu et al. 2023 sequenced the neocortex using both snRNAseq and scATACseq techonologies (simutaneous multi-omics single-cell profiling in the developing brain)
