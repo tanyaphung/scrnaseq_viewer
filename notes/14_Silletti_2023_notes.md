@@ -88,8 +88,3 @@ adata.obs.shape
 - I used a snakemake pipeline to run this python script in parallel: `code/preprocessing/14_Siletti_AdultHumanBrain/snakefile_qc_scrna_siletti.smk`
 - update cell type columns (this is because when this data was originally processed, we did not come to the conclusion in our group that we would rename the first level of cell type annotation to cell_type_level_1)
 - `code/preprocessing/14_Siletti_AdultHumanBrain/update_celltype.py` (run with `code/preprocessing/14_Siletti_AdultHumanBrain/run_update_celltype.sh`)
-
-## Processing for FUMA celltype
-### Mean gene expression per cell type
-- Python script: `code/postprocessing/compute_sumstat_magma.py`
-       - I  used a snakemake pipeline to run the above Pythons script: `code/postprocessing/compute_sumstat_magma.smk`
