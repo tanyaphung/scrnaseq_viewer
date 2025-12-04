@@ -1,5 +1,4 @@
 # This script processes the scRNAseq data from child cerebellum from Torres-Flores
-# See notes in: data\misc\TorresFlores_Cerebellum_notes.md
 # Author: Tanya Phung (t.n.phung@vu.nl)
 # Date: 2024-01-11
 
@@ -15,8 +14,8 @@ import sys
 def main():
 # setting up #####
     id = sys.argv[1]
-    base_dir = "/gpfs/work5/0/vusr0480/Preprocessing_scRNA/data" #change here if necessary
-    h5ad_path = "/gpfs/work5/0/vusr0480/Preprocessing_scRNA/data/4_TorresFlores_Cerebellum_Human/7dd2aaf8-1714-49bc-a434-671e8465ace0.h5ad" #change here per data
+    base_dir = "Preprocessing_scRNA/data" #change here if necessary
+    h5ad_path = "Preprocessing_scRNA/data/4_TorresFlores_Cerebellum_Human/7dd2aaf8-1714-49bc-a434-671e8465ace0.h5ad" #change here per data
     gene_names_org = "symbol" #change here per data
 
     # read in adata #####
@@ -96,7 +95,7 @@ def main():
     adata_normal_subset.var.reset_index(inplace=True) #since row index of adata.var is ensemble_id, we want to convert this into a column
     adata_normal_subset.var = adata_normal_subset.var.rename(columns={'feature_name': 'symbol'}) #update the column names to have consistent naming convention
     # convert to ensembl from symbol
-    gene_names_fp = '/gpfs/work5/0/vusr0480/Preprocessing_scRNA/code/conversion_files/gene_names_human.txt' #path to gene_names_human.txt
+    gene_names_fp = 'Preprocessing_scRNA/code/conversion_files/gene_names_human.txt' #path to gene_names_human.txt
     gene_names_add = "Ensembl gene ID"
     adata_gene_converted = single_cell_helper_functions_v3.add_gene_names_human(adata_normal_subset, gene_names_fp, gene_names_org, gene_names_add)
     ngenes_after_conversion = adata_gene_converted.var.dropna(subset=["ensembl"]).shape[0]
