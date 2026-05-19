@@ -76,6 +76,7 @@ forebrain meninges
 meninx",prenatal (5 to 13 weeks),Linnarsson,-,"156,726",~150k,10x 3' v3,13,7,6,-,-,https://github.com/linnarsson-lab/human-meninges-development,Human,3/9/2025,
 35,Brain,dorsolateral prefrontal cortex,adult,Yang,-,21155,~20k,10x multiome,10 (normal),6 (normal),4 (normal),-,-,-,Human,3/9/2025,
 36,Brain,dorsolateral prefrontal cortex,adult,Lee,2024,"121,078 (normal)",~120k,10x 3' v3,26 (normal),17 (normal),9 (normal),-,Single-cell atlas of transcriptomic vulnerability across multiple neurodegenerative and neuropsychiatric diseases,https://www.medrxiv.org/content/10.1101/2024.10.31.24316513v1,Human,3/9/2025,cohort RADC
+37,Bladder,"Lower urinary tract (dome, neck, ureteral orifice, ureterovesical junction)",Adult,Santo,2024,29834,~30k,10x 3' v3,1,0,1,39850354,Exploring the utility of snRNA-seq in profiling human bladder tissue: A comprehensive comparison with scRNA-seq,https://pubmed.ncbi.nlm.nih.gov/39850354/,Human,3/9/2026,"Three CellxGene subsets merged (urothelial/stromal/immune). Single male donor, 4 bladder regions."
 ,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,
