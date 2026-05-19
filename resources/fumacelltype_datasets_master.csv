@@ -387,3 +387,4 @@ Internal_ID,Dataset_ID,NumberOf CellTypeLevel,CellTypeLevelUsed,NumberOfCells,Br
 556_Linnarsson_Prenatal_ForebrainMeninges,34,1,1,20796,,
 557_Yang_Human_Adult_DLPFC,35,1,1,20708,,
 558_Lee_Human_2024_Adult_DLPFC_RADC_Cohort,36,1,1,121078,,
+559_Santo_Bladder_Human_2024,37,1,1,22284,"Human urinary bladder (urothelial + stromal + immune), GUDMAP consortium, 24 cell types",
